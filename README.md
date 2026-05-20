@@ -1,4 +1,4 @@
-# 🖧 CONSTRUCT_ACTIVE // ARCHITECT: SHAWN
+# 🕸️ NEURAL_MESH_ESTABLISHED // SIGNAL: SHAWN
 
 This portfolio showcases the engineering principles required to build reliable, high-stakes intelligent systems. I construct environments where AI moves past mere suggestion; it executes verified logic. Expect to see deeply architected solutions—from multi-agent fault tolerance to hybrid search that combines the precision of BM25 with the nuance of kNN. 
 
