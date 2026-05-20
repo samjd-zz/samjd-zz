@@ -6,10 +6,15 @@ Review these projects to see how deterministic engineering anchors powerful inte
 
 ---
 
-### 🚀 Featured Architecture: LinkedIn SSI Booster
-A truth-gated, continual learning automation agent blending deterministic keyword ranking with semantic vector search.
+### 🚀 Active Nodes: Featured Architectures
 
+**[Node 01] LinkedIn SSI Booster**
+A truth-gated, continual learning automation agent blending deterministic keyword ranking with semantic vector search.
 🌟 **[Star linkedin_ssi_booster on GitHub](https://github.com/samjd-zz/linkedin_ssi_booster)** 🌟
+
+**[Node 02] Regulatory Intelligence Assistant (RIA)**
+The multi-tiered search architecture built for the G7 GovAI Grand Challenge. Master of deep indexing and relationship traversal across massive federal legal datasets.
+🌟 **[Star regulatory-intelligence-assistant on GitHub](https://github.com/samjd-zz/regulatory-intelligence-assistant)** 🌟
 
 ---
 
@@ -30,7 +35,7 @@ Building robust, resilient systems that require specialized roles to execute com
 * **Protocols:** Deep proficiency with modern inter-service communication (MCP/FastMCP).
 
 #### 3. Deep Indexing & Search
-*Found in: G7 GovAI Grand Challenge RIA | CIHR Portal*
+*Found in: [Regulatory Intelligence Assistant](https://github.com/samjd-zz/regulatory-intelligence-assistant) | CIHR Portal*
 Mastering structured, large-scale information retrieval across heterogeneous data sources.
 * **The Stack:** Deploying sophisticated, multi-layered combinations: Elasticsearch (BM25), Neo4j (Graph and relationship traversal), and vector search (kNN).
 * **Search Logic:** Implementing multi-tier search fallbacks. If one index fails or lacks context, the query degrades gracefully to the next most suitable mechanism, ensuring high relevance and sub-500ms latency.
