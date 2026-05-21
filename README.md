@@ -1,12 +1,3 @@
-Good catch. I crossed the wires on that one. Answer42 relies on Spring-managed circuit breakers for its fallback logic, not NLP routing.
-
-The NLP load-balancing you built to intelligently route traffic and prevent dual Gemmas from overloading your GPU is a highly specific (and impressive) local architecture, but it belongs to a different node entirely.
-
-I've purged the NLP reference from Answer42, aligned it with its actual Spring Batch and Ollama fallback stack, and shifted your NLP routing expertise into the broader skills section where it belongs.
-
-Here is the patched mesh:
-
-```markdown
 # 🕸️ NEURAL_MESH_ESTABLISHED // SIGNAL: SHAWN
 
 This portfolio showcases the engineering principles required to build reliable, high-stakes intelligent systems. I construct environments where AI moves past mere suggestion; it executes verified logic. Expect to see deeply architected solutions—from multi-agent fault tolerance to hybrid search that combines the precision of BM25 with the nuance of kNN. 
@@ -76,5 +67,3 @@ Whether you're here for the code, the algorithmic soundscapes, or just to connec
 Building truth-gated systems and producing tracks takes heavy compute cycles. If you want to support the late-night builds:
 
 💫 **[Join & Support my work on Buffer](https://join.buffer.com/samjd42)** 🚀
-
-```
