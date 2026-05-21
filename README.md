@@ -9,15 +9,15 @@ Review these projects to see how deterministic engineering anchors powerful inte
 ### 🚀 Active Nodes: Featured Architectures
 
 **[Node 01] LinkedIn SSI Booster**
-A truth-gated, continual learning automation agent blending deterministic keyword ranking with semantic vector search.
+A truth-gated, continual learning automation agent. Driven by hybrid retrieval that leverages BM25 for deterministic keyword scoring, NetworkX for structural graph mapping, and spaCy for rigorous NLP semantic validation to strictly ground outputs.
 🌟 **[Star linkedin_ssi_booster on GitHub](https://github.com/samjd-zz/linkedin_ssi_booster)** 🌟
 
 **[Node 02] Regulatory Intelligence Assistant (RIA)**
-The multi-tiered search architecture built for the G7 GovAI Grand Challenge. Master of deep indexing and relationship traversal across massive federal legal datasets.
+Built for the G7 GovAI Grand Challenge, this multi-tiered search architecture masters deep indexing. It combines Elasticsearch, Neo4j graph traversal, and vector search to navigate massive federal legal datasets with absolute precision.
 🌟 **[Star regulatory-intelligence-assistant on GitHub](https://github.com/samjd-zz/regulatory-intelligence-assistant)** 🌟
 
 **[Node 03] Answer42**
-A resilient, multi-agent orchestration pipeline designed for complex analysis. Features intelligent routing and fault tolerance via local Ollama nodes.
+A resilient, multi-agent orchestration pipeline designed for complex analysis. Features intelligent NLP-based task routing to manage local compute constraints—ensuring seamless execution across local Ollama nodes without overloading the GPU.
 🌟 **[Star answer42 on GitHub](https://github.com/samjd-zz/answer42)** 🌟
 
 ---
@@ -27,15 +27,15 @@ A resilient, multi-agent orchestration pipeline designed for complex analysis. F
 #### 1. Hybrid RAG & Adaptive Curation
 *Found in: linkedin_ssi_booster | General RAG Concepts*
 Moving beyond simple prompt wrapping to combine deterministic fact-checking with advanced semantic retrieval.
-* **Hybrid Retrieval:** Blending deterministic keyword ranking (BM25) with semantic vector search (kNN via SentenceTransformers).
-* **Truth Gate:** A multi-stage validation layer analyzing candidate text via BM25 evidence scoring, spaCy semantic similarity checks, and NER validation. This minimizes hallucination by grounding LLM outputs strictly in private, persona-defined knowledge.
+* **Hybrid Retrieval:** Blending deterministic keyword ranking (BM25) with structured relationship mapping (NetworkX).
+* **Truth Gate:** A multi-stage validation layer analyzing candidate text via BM25 evidence scoring and spaCy semantic similarity checks. This minimizes hallucination by grounding LLM outputs strictly in private, persona-defined knowledge.
 * **Continual Learning:** The system actively tracks published output to refine source weighting and source reliability priors over time.
 
 #### 2. Multi-Agent Orchestration & Workflow Design
 *Found in: [Answer42](https://github.com/samjd-zz/answer42) | SIGNAL-ZERO | Grizzly News*
 Building robust, resilient systems that require specialized roles to execute complex tasks.
 * **Agentic Pipelines:** Architecting complex workflows (e.g., 9-agent academic analysis, 5-agent detection systems) where specialized nodes communicate and refine outputs sequentially.
-* **Resilience & Local Routing:** Implementing fallback mechanisms—like routing intelligently to local Ollama nodes when compute allows—and utilizing fast, explicit protocols like FastMCP to guarantee uptime regardless of external API states.
+* **Resilience & Local Routing:** Implementing fallback mechanisms and intelligent NLP routing to handle local hardware limitations safely (e.g., orchestrating local Gemma models efficiently), utilizing protocols like FastMCP to guarantee uptime.
 * **Protocols:** Deep proficiency with modern inter-service communication (MCP/FastMCP).
 
 #### 3. Deep Indexing & Search
