@@ -57,9 +57,8 @@ Whether you're here for the code, the algorithmic soundscapes, or just to connec
 
 * 👤 **LinkedIn:** [Shawn Jackson-Dyck](https://linkedin.com/in/shawn-jackson-dyck-52aa74358/) 🚀
 * 🎶 **Suno:** [Rei Toei (@samjd42)](https://suno.com/@samjd42) 🚀
+* 🎶 **Audius:** [@samjd42](https://audius.co/samjd42) 🚀
 * ▶️ **YouTube:** [@samjd42](https://youtube.com/@samjd42) 🚀
-* 📸 **Instagram:** [@samjd.42](https://instagram.com/samjd.42) 🚀
-* 🎬 **Tiktok:** [@samjd.42](https://tiktok.com/@samjd.42) 🚀
 
 ---
 
