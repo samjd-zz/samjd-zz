@@ -31,7 +31,7 @@ Review these projects to see how deterministic engineering anchors powerful inte
 ### 🚀 Active Nodes: Featured Architectures & Frameworks
 
 **[Node 00] The Derivative of Truth Framework**
-A revolutionary mathematical and architectural paradigm that redefines AI truthfulness by moving beyond static prompt evaluation to continuous differential verification. By treating factual alignment as a dynamic rate-of-change across multi-layer knowledge graphs, vector spaces, and BM25 evidence bounds, the framework mathematically calculates hallucination drift in real time—enforcing absolute, provable factual integrity at the system level.
+A revolutionary mathematical paradigm that replaces black-box vector similarity with deterministic token-space trajectory analysis. Rather than attempting to passively detect hallucinations after generation, the framework evaluates factual alignment as a dynamic rate-of-change (dT/dt) in token-space—measuring the directional derivative of candidate outputs against BM25 evidence bounds, NetworkX knowledge graph paths, and token-level lexical constraints. By calculating truth gradients and penalizing uncertainty in real time, it actively anchors generative model output to provable, auditable facts at the structural level.
 📄 **[Read the Theoretical Paper (PDF)](https://github.com/samjd-zz/linkedin_ssi_booster/blob/main/docs/The%20Derivative%20of%20Truth_%20A%20New%20Mathematical%20Framework%20for%20AI%20Truthfulness.pdf)**
 
 **[Node 01] LinkedIn SSI Booster**
