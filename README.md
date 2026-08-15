@@ -8,13 +8,14 @@
 ### 概要 (Overview)
 本ポートフォリオは、高い信頼性と決定論的な設計（Deterministic Engineering）に基づいた、実践的なAI/知能システムの構築原則を示しています。
 
-### 主要プロジェクト (Featured Architectures)
+### 主要プロジェクト & 理論枠組み (Featured Architectures & Research)
+* **The Derivative of Truth Framework**: LLMのハルシネーション（幻覚）を定量評価・排除するための「真偽微分」数学理論モデル。
 * **LinkedIn SSI Booster**: 真偽検証ゲート（Truth-Gated）と継続的学習機能を備えた自動化エージェント。
 * **Regulatory Intelligence Assistant (RIA)**: G7 GovAI Grand Challenge向け多層検索アーキテクチャ（Elasticsearch + Neo4j + Vector）。
 * **Answer42**: 学術研究分析のための9エージェントパイプライン。クラウドAPIとローカルOllamaの自動切り替えを搭載。
 
 ### コア技術 (Key Technical Pillars)
-1. **ハイブリッドRAG & 応答検証**: BM25 + NetworkX + spaCy による多段階検証（Truth Gate）。
+1. **真偽検証 (Truth Gate) & 応答評価**: Derivative of Truth、BM25、NetworkX、spaCy を融合した多段階検証レイヤー。
 2. **マルチエージェントオーケストレーション**: Spring管理の耐障害性、MCP/FastMCPプロトコル活用。
 3. **ディープインデキシング & 検索**: Elasticsearch, Neo4j, ベクトル検索による低遅延ハイブリッド検索。
 4. **エンタープライズ & イベントストリーミング**: Java/JMSによる高スループットシステム構築。
@@ -27,10 +28,14 @@ Review these projects to see how deterministic engineering anchors powerful inte
 
 ---
 
-### 🚀 Active Nodes: Featured Architectures
+### 🚀 Active Nodes: Featured Architectures & Frameworks
+
+**[Node 00] The Derivative of Truth Framework**
+A novel mathematical and architectural framework designed to quantify, evaluate, and eliminate AI hallucination. By modeling information grounding as a differential verification problem, it calculates real-time truthfulness scores across multi-layer retrieval networks to enforce absolute factual integrity.
+📄 **[Read the Theoretical Paper (PDF)](https://github.com/samjd-zz/linkedin_ssi_booster/blob/main/docs/The%20Derivative%20of%20Truth_%20A%20New%20Mathematical%20Framework%20for%20AI%20Truthfulness.pdf)** 📄
 
 **[Node 01] LinkedIn SSI Booster**
-A truth-gated, continual learning automation agent. Driven by hybrid retrieval that leverages BM25 for deterministic keyword scoring, NetworkX for structural graph mapping, and spaCy for rigorous NLP semantic validation to strictly ground outputs.
+A truth-gated, continual learning automation agent implementing the Derivative of Truth framework. Driven by hybrid retrieval that leverages BM25 for deterministic keyword scoring, NetworkX for structural graph mapping, and spaCy for rigorous NLP semantic validation to strictly ground outputs.
 🌟 **[Star linkedin_ssi_booster on GitHub](https://github.com/samjd-zz/linkedin_ssi_booster)** 🌟
 
 **[Node 02] Regulatory Intelligence Assistant (RIA)**
@@ -45,11 +50,12 @@ A sophisticated, 9-agent orchestration pipeline designed for academic research a
 
 ### 🧬 Key Technical Pillars
 
-#### 1. Hybrid RAG & Adaptive Curation
-*Found in: linkedin_ssi_booster | General RAG Concepts*
-Moving beyond simple prompt wrapping to combine deterministic fact-checking with advanced semantic retrieval.
+#### 1. Hybrid RAG, Truth Gates & Mathematical Grounding
+*Found in: linkedin_ssi_booster | The Derivative of Truth Framework*
+Moving beyond simple prompt wrapping to combine deterministic mathematical fact-checking with advanced semantic retrieval.
+* **Derivative of Truth:** A mathematical framework calculating rate-of-change evidence metrics to verify whether model outputs diverge from reference context.
 * **Hybrid Retrieval:** Blending deterministic keyword ranking (BM25) with structured relationship mapping (NetworkX).
-* **Truth Gate:** A multi-stage validation layer analyzing candidate text via BM25 evidence scoring and spaCy semantic similarity checks. This minimizes hallucination by grounding LLM outputs strictly in private, persona-defined knowledge.
+* **4-Layer Truth Gate:** A multi-stage validation layer analyzing candidate text via evidence scoring, graph traversal, and spaCy semantic similarity checks. This minimizes hallucination by grounding LLM outputs strictly in private, persona-defined knowledge.
 * **Continual Learning:** The system actively tracks published output to refine source weighting and source reliability priors over time.
 
 #### 2. Multi-Agent Orchestration & Workflow Design
@@ -76,6 +82,7 @@ Mastering structured, large-scale information retrieval across heterogeneous dat
 
 Whether you're here for the code, the algorithmic soundscapes, or just to connect across the grid:
 
+* 📄 **Research Paper:** [The Derivative of Truth Framework (PDF)](https://github.com/samjd-zz/linkedin_ssi_booster/blob/main/docs/The%20Derivative%20of%20Truth_%20A%20New%20Mathematical%20Framework%20for%20AI%20Truthfulness.pdf) 🚀
 * 👤 **LinkedIn:** [Shawn Jackson-Dyck](https://linkedin.com/in/shawn-jackson-dyck-52aa74358/) 🚀
 * 🎶 **Suno:** [Rei Toei (@samjd42)](https://suno.com/@samjd42) 🚀
 * 🎶 **Audius:** [@samjd42](https://audius.co/samjd42) 🚀
