@@ -31,7 +31,7 @@ Review these projects to see how deterministic engineering anchors powerful inte
 ### 🚀 Active Nodes: Featured Architectures & Frameworks
 
 **[Node 00] The Derivative of Truth Framework**
-A novel mathematical and architectural framework designed to quantify, evaluate, and eliminate AI hallucination. By modeling information grounding as a differential verification problem, it calculates real-time truthfulness scores across multi-layer retrieval networks to enforce absolute factual integrity.
+A revolutionary mathematical and architectural paradigm that redefines AI truthfulness by moving beyond static prompt evaluation to continuous differential verification. By treating factual alignment as a dynamic rate-of-change across multi-layer knowledge graphs, vector spaces, and BM25 evidence bounds, the framework mathematically calculates hallucination drift in real time—enforcing absolute, provable factual integrity at the system level.
 📄 **[Read the Theoretical Paper (PDF)](https://github.com/samjd-zz/linkedin_ssi_booster/blob/main/docs/The%20Derivative%20of%20Truth_%20A%20New%20Mathematical%20Framework%20for%20AI%20Truthfulness.pdf)** 📄
 
 **[Node 01] LinkedIn SSI Booster**
