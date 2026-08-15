@@ -1,5 +1,26 @@
 # 🕸️ NEURAL_MESH_ESTABLISHED // SIGNAL: SHAWN
 
+<details>
+<summary>🇯🇵 <b>日本語の概要はこちら (Click to expand Japanese summary)</b></summary>
+
+<br />
+
+### 概要 (Overview)
+本ポートフォリオは、高い信頼性と決定論的な設計（Deterministic Engineering）に基づいた、実践的なAI/知能システムの構築原則を示しています。
+
+### 主要プロジェクト (Featured Architectures)
+* **LinkedIn SSI Booster**: 真偽検証ゲート（Truth-Gated）と継続的学習機能を備えた自動化エージェント。
+* **Regulatory Intelligence Assistant (RIA)**: G7 GovAI Grand Challenge向け多層検索アーキテクチャ（Elasticsearch + Neo4j + Vector）。
+* **Answer42**: 学術研究分析のための9エージェントパイプライン。クラウドAPIとローカルOllamaの自動切り替えを搭載。
+
+### コア技術 (Key Technical Pillars)
+1. **ハイブリッドRAG & 応答検証**: BM25 + NetworkX + spaCy による多段階検証（Truth Gate）。
+2. **マルチエージェントオーケストレーション**: Spring管理の耐障害性、MCP/FastMCPプロトコル活用。
+3. **ディープインデキシング & 検索**: Elasticsearch, Neo4j, ベクトル検索による低遅延ハイブリッド検索。
+4. **エンタープライズ & イベントストリーミング**: Java/JMSによる高スループットシステム構築。
+
+</details>
+
 This portfolio showcases the engineering principles required to build reliable, high-stakes intelligent systems. I construct environments where AI moves past mere suggestion; it executes verified logic. Expect to see deeply architected solutions—from multi-agent fault tolerance to hybrid search that combines the precision of BM25 with the nuance of kNN. 
 
 Review these projects to see how deterministic engineering anchors powerful intelligence.
