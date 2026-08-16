@@ -10,7 +10,7 @@
 
 ### 主要プロジェクト & 理論枠組み (Featured Architectures & Research)
 * **The Derivative of Truth Framework**: LLMのハルシネーション（幻覚）を定量評価・排除するための「真偽微分」数学理論モデル。
-* **LinkedIn SSI Booster**: 真偽検証ゲート（Truth-Gated）と継続的学習機能を備えた自動化エージェント。
+* **LinkedIn SSI Booster**: 真偽検証ゲート（Truth-Gated）とハイブリッドRAG（Retrieval-Augmented Generation）、継続的学習機能を備えた自動化エージェント。
 * **Regulatory Intelligence Assistant (RIA)**: G7 GovAI Grand Challenge向けハイブリッドRAG多層検索アーキテクチャ（Elasticsearch + Neo4j + Vector）。
 * **Answer42**: 学術研究分析のための9エージェントパイプライン。クラウドAPIとローカルOllamaの自動切り替えを搭載。
 * **S1gnal-Zero**: Solace Build to Convert Hackathon優勝作品。Model Context Protocol (MCP) を活用した5エージェント分散リアルタイム処理システム。
@@ -18,7 +18,7 @@
 ### コア技術 (Key Technical Pillars)
 1. **真偽検証 (Truth Gate) & 応答評価**: Derivative of Truth、BM25、NetworkX、spaCy を融合した多段階検証レイヤー。
 2. **マルチエージェントオーケストレーション**: Spring管理の耐障害性、MCP/FastMCPプロトコル活用。
-3. **ディープインデキシング & 検索**: Elasticsearch, Neo4j, ベクトル検索による低遅延ハイブリッド検索 (RAG)。
+3. **ディープインデキシング & 検索 (Hybrid RAG)**: Elasticsearch, Neo4j, ベクトル検索による低遅延ハイブリッド検索。
 4. **エンタープライズ & イベントストリーミング**: Java/JMSによる高スループットシステム構築。
 
 </details>
@@ -36,7 +36,7 @@ A revolutionary mathematical paradigm that replaces black-box vector similarity 
 📄 **[Read the Theoretical Paper (PDF)](https://github.com/samjd-zz/linkedin_ssi_booster/blob/main/docs/The%20Derivative%20of%20Truth_%20A%20New%20Mathematical%20Framework%20for%20AI%20Truthfulness.pdf)**
 
 **[Node 01] LinkedIn SSI Booster**
-A truth-gated, continual learning automation agent implementing the Derivative of Truth framework. Driven by hybrid retrieval that leverages BM25 for deterministic keyword scoring, NetworkX for structural graph mapping, and spaCy for rigorous NLP semantic validation to strictly ground outputs.
+A truth-gated, continual learning automation agent driven by an open-source hybrid Retrieval-Augmented Generation (RAG) architecture. Implements the Derivative of Truth framework using BM25 for deterministic keyword scoring, NetworkX for structural graph mapping, and spaCy for rigorous NLP semantic validation to strictly ground output.
 🌟 **[Star linkedin_ssi_booster on GitHub](https://github.com/samjd-zz/linkedin_ssi_booster)** 🌟
 
 **[Node 02] Regulatory Intelligence Assistant (RIA)**
@@ -56,10 +56,10 @@ Award-winning 5-agent Model Context Protocol (MCP) system built for the Solace B
 ### 🧬 Key Technical Pillars
 
 #### 1. Hybrid RAG, Truth Gates & Mathematical Grounding
-*Found in: Regulatory Intelligence Assistant (RIA) | linkedin_ssi_booster | The Derivative of Truth Framework*
-Moving beyond simple prompt wrapping to combine deterministic mathematical fact-checking with advanced semantic retrieval.
+*Found in: linkedin_ssi_booster | Regulatory Intelligence Assistant (RIA) | The Derivative of Truth Framework*
+Moving beyond simple prompt wrapping to combine deterministic mathematical fact-checking with advanced hybrid Retrieval-Augmented Generation (RAG).
 * **Derivative of Truth:** A mathematical framework calculating rate-of-change evidence metrics to verify whether model outputs diverge from reference context.
-* **Hybrid Retrieval RAG:** Blending deterministic keyword ranking (BM25) with structured relationship mapping (NetworkX) and dense vector embeddings.
+* **Hybrid RAG Pipelines:** Blending deterministic keyword ranking (BM25) with structured relationship mapping (NetworkX) and dense vector embeddings to ground generative responses strictly in source context.
 * **4-Layer Truth Gate:** A multi-stage validation layer analyzing candidate text via evidence scoring, graph traversal, and spaCy semantic similarity checks. This minimizes hallucination by grounding LLM outputs strictly in private, persona-defined knowledge.
 * **Continual Learning:** The system actively tracks published output to refine source weighting and source reliability priors over time.
 
@@ -71,8 +71,8 @@ Building robust, resilient systems that require specialized roles to execute com
 * **Protocols & Event Architecture:** Deep proficiency with modern inter-service communication and agent standards (MCP / FastMCP, Solace / JMS event streaming).
 
 #### 3. Deep Indexing & Search
-*Found in: Regulatory Intelligence Assistant | CIHR Portal*
-Mastering structured, large-scale information retrieval across heterogeneous data sources for high-accuracy RAG systems.
+*Found in: Regulatory Intelligence Assistant | CIHR Portal | linkedin_ssi_booster*
+Mastering structured, large-scale information retrieval across heterogeneous data sources for high-accuracy Hybrid RAG systems.
 * **The Stack:** Deploying sophisticated, multi-layered combinations: Elasticsearch (BM25), Neo4j (Graph and relationship traversal), and vector search (kNN).
 * **Search Logic:** Implementing multi-tier search fallbacks. If one index fails or lacks context, the query degrades gracefully to the next most suitable mechanism, ensuring high relevance and sub-500ms latency.
 * **Domain Focus:** Conquering the complexity of querying hundreds of thousands of federal legal documents.
