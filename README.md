@@ -6,13 +6,14 @@
 <br />
 
 ### 概要 (Overview)
-本ポートフォリオは、高い信頼性と決定論的な設計（Deterministic Engineering）に基づいた、実践的なAI/知能システムの構築原則を示しています。
+本ポートフォリオは、高い信頼性と決定論的な設計（Deterministic Engineering）に基づいた、実践的なAI/知能 systemsの構築原則を示しています。
 
 ### 主要プロジェクト & 理論枠組み (Featured Architectures & Research)
 * **The Derivative of Truth Framework**: LLMのハルシネーション（幻覚）を定量評価・排除するための「真偽微分」数学理論モデル。
 * **LinkedIn SSI Booster**: 真偽検証ゲート（Truth-Gated）と継続的学習機能を備えた自動化エージェント。
 * **Regulatory Intelligence Assistant (RIA)**: G7 GovAI Grand Challenge向け多層検索アーキテクチャ（Elasticsearch + Neo4j + Vector）。
 * **Answer42**: 学術研究分析のための9エージェントパイプライン。クラウドAPIとローカルOllamaの自動切り替えを搭載。
+* **S1gnal-Zero**: Solace Build to Convert Hackathon優勝作品。Model Context Protocol (MCP) を活用した5エージェント分散リアルタイム処理システム。
 
 ### コア技術 (Key Technical Pillars)
 1. **真偽検証 (Truth Gate) & 応答評価**: Derivative of Truth、BM25、NetworkX、spaCy を融合した多段階検証レイヤー。
@@ -46,6 +47,10 @@ Built for the G7 GovAI Grand Challenge, this multi-tiered search architecture ma
 A sophisticated, 9-agent orchestration pipeline designed for academic research analysis. Features automated fallback logic and circuit breaker protection via Spring Batch—seamlessly shifting from cloud APIs to local Ollama models without dropping the execution thread.
 🌟 **[Star answer42 on GitHub](https://github.com/samjd-zz/answer42)** 🌟
 
+**[Node 04] S1gnal-Zero**
+Award-winning 5-agent Model Context Protocol (MCP) system built for the Solace Build to Convert Hackathon ("Best Use of Solace Agent"). Implements real-time event-driven agentic communication, robust message-broker routing, and localized node coordination for high-throughput intelligent signal processing.
+🌟 **[Star s1gnalzeroapp on GitHub](https://github.com/samjd-zz/s1gnalzeroapp)** 🌟
+
 ---
 
 ### 🧬 Key Technical Pillars
@@ -59,11 +64,11 @@ Moving beyond simple prompt wrapping to combine deterministic mathematical fact-
 * **Continual Learning:** The system actively tracks published output to refine source weighting and source reliability priors over time.
 
 #### 2. Multi-Agent Orchestration & Workflow Design
-*Found in: Answer42 | SIGNAL-ZERO | Grizzly News*
+*Found in: Answer42 | S1gnal-Zero | Grizzly News*
 Building robust, resilient systems that require specialized roles to execute complex tasks.
-* **Agentic Pipelines:** Architecting complex workflows (e.g., the 9-agent academic analysis pipeline in Answer42, or 5-agent detection systems) where specialized nodes communicate and refine outputs sequentially.
+* **Agentic Pipelines:** Architecting complex workflows (e.g., the 9-agent academic analysis pipeline in Answer42, or the 5-agent event-driven system in S1gnal-Zero) where specialized nodes communicate and refine outputs sequentially.
 * **Resilience & Local Routing:** Implementing robust fallback mechanisms and Spring-managed circuit breakers to guarantee uptime. In strictly local environments, I utilize intelligent NLP routing to efficiently manage hardware constraints—ensuring traffic is directed seamlessly without overloading the GPU with multiple Gemma instances simultaneously.
-* **Protocols:** Deep proficiency with modern inter-service communication (MCP/FastMCP).
+* **Protocols & Event Architecture:** Deep proficiency with modern inter-service communication and agent standards (MCP / FastMCP, Solace / JMS event streaming).
 
 #### 3. Deep Indexing & Search
 *Found in: Regulatory Intelligence Assistant | CIHR Portal*
@@ -73,8 +78,8 @@ Mastering structured, large-scale information retrieval across heterogeneous dat
 * **Domain Focus:** Conquering the complexity of querying hundreds of thousands of federal legal documents.
 
 #### 4. Enterprise & Event Streaming
-*Found in: TPG/USPS JMS Platform | Shared Services Canada*
-* **High-Throughput Core:** Extensive architectural experience building, maintaining, and scaling core Java enterprise systems and high-volume event-driven platforms.
+*Found in: TPG/USPS JMS Platform | S1gnal-Zero | Shared Services Canada*
+* **High-Throughput Core:** Extensive architectural experience building, maintaining, and scaling core Java enterprise systems, event brokers, and high-volume event-driven platforms.
 
 ---
 
