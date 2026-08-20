@@ -56,11 +56,11 @@ The framework does not mathematically prove truth or control token generation in
 
 A truth-gated, continual-learning automation agent driven by a local-first hybrid Retrieval-Augmented Generation (RAG) architecture — and a multi-avatar content-creation system spanning text, image, and music.
 
-It uses BM25 for transparent lexical retrieval, NetworkX for knowledge-graph relationships, and spaCy for semantic and entity-oriented validation. Generated content is evaluated against persona facts, domain knowledge, and article evidence before it reaches the publishing workflow.
+It uses BM25 for transparent lexical retrieval, NetworkX for knowledge-graph relationships, and spaCy for semantic and entity-oriented validation. Generated content is evaluated against persona facts, domain knowledge, and article evidence before it reaches the publishing workflow — scored end-to-end by the Derivative of Truth framework (Node 00), which flags or removes low-confidence claims via the post-generation truth gate.
 
 🎨 FLUX Capacitor — a local GPU art generator (FLUX.1-schnell, GGUF-quantized) rendering symbolic visuals for every post, with a shared GPU orchestrator that keeps Ollama-first sequencing on a single RTX 3060.
 
-🎶 Rei Toei — a Suno + Strudel-driven AI music avatar (inspired by William Gibson's Idoru) that converts curated technical knowledge into cyberpop/industrial algorithmic music, complete with its own persona graph and domain-knowledge pack.
+🎶 Rei Toei — a Suno + Strudel-driven AI music avatar (inspired by William Gibson's Idoru) that converts curated technical knowledge into cyberpop/industrial algorithmic music — every lyric and pattern likewise passes through the DoT truth gate before publishing.
 
 🌟 **[Star linkedin_ssi_booster on GitHub](https://github.com/samjd-zz/linkedin_ssi_booster)** 🌟
 
