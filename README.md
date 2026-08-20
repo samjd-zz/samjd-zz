@@ -52,7 +52,7 @@ The framework does not mathematically prove truth or control token generation in
 
 📄 **[Read the Theoretical Paper (PDF)](https://github.com/samjd-zz/linkedin_ssi_booster/blob/main/docs/The%20Derivative%20of%20Truth_%20A%20New%20Mathematical%20Framework%20for%20AI%20Truthfulness.pdf)**
 
-[Node 01] LinkedIn SSI Booster
+**[Node 01] LinkedIn SSI Booster**
 
 A truth-gated, continual-learning automation agent driven by a local-first hybrid Retrieval-Augmented Generation (RAG) architecture — and a multi-avatar content-creation system spanning text, image, and music.
 
