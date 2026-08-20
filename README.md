@@ -58,7 +58,7 @@ A truth-gated, continual-learning automation agent driven by a local-first hybri
 
 It uses BM25 for transparent lexical retrieval, NetworkX for knowledge-graph relationships, and spaCy for semantic and entity-oriented validation. Generated content is evaluated against persona facts, domain knowledge, and article evidence before it reaches the publishing workflow.
 
-🎨 FLUX Capacitor — a local GPU art avatar (FLUX.1-schnell, GGUF-quantized) rendering symbolic visuals for every post, with a shared GPU orchestrator that keeps Ollama-first sequencing on a single RTX 3060.
+🎨 FLUX Capacitor — a local GPU art generator (FLUX.1-schnell, GGUF-quantized) rendering symbolic visuals for every post, with a shared GPU orchestrator that keeps Ollama-first sequencing on a single RTX 3060.
 
 🎶 Rei Toei — a Suno + Strudel-driven AI music avatar (inspired by William Gibson's Idoru) that converts curated technical knowledge into cyberpop/industrial algorithmic music, complete with its own persona graph and domain-knowledge pack.
 
