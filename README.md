@@ -11,19 +11,19 @@
 
 ### 主要プロジェクトと理論・実装フレームワーク (Featured Architectures & Frameworks)
 
-* **Derivative of Truth Framework**: BM25検索、知識グラフ、語彙的一致、不確実性ペナルティ、Probabilistic Logic Networks（確率論理ネットワーク）を組み合わせ、LLMが生成した主張の証拠支持度を評価する監査可能な真実性スコアリングフレームワーク。低スコアの主張は検出・フラグ付け・抑制できます。
-* **Universal Isomorphic Representation Architecture (UIRA)**: 位相幾何的距離保存（Adamic Encoder）、原子ルーツのハイパーグラフ結合合成（Yetzirah Engine）、多視点認知多様体（Babel Partitioner）、多多様体間コンセンサス検証（Truth Gate）を統合し、潜在空間の構造的グラウンディングとハルシネーション抑制を実現する次世代AI表現アーキテクチャ。
-* **LinkedIn SSI Booster**: 真偽検証ゲート、ハイブリッドRAG（Retrieval-Augmented Generation）、継続的学習機能を備えたローカルファーストの自動化エージェント。
-* **Regulatory Intelligence Assistant (RIA)**: G7 GovAI Grand Challenge向けに設計した、Elasticsearch、Neo4j、ベクトル検索を組み合わせた多層ハイブリッドRAGアーキテクチャ。
-* **Answer42**: 学術研究分析のための9エージェント・パイプライン。クラウドAPIとローカルOllamaモデルのフォールバック処理を備えています。
-* **S1gnal-Zero**: Solace Build to Convert Hackathonの受賞作品。Model Context Protocol (MCP) とイベント駆動型メッセージングを活用した、5エージェント分散処理システムです。
+* **Derivative of Truth Framework**: 主張と証拠のオーバーラップ評価、不確実性ペナルティ、Probabilistic Logic Networks（確率論理ネットワーク）を組み合わせ、LLM生成文の証拠支持度を評価・追跡（$dT/dt$）する監査可能な真実性検証レイヤー。
+* **Universal Isomorphic Representation Architecture (UIRA)**: 位相幾何的距離保存（Adamic Encoder）、原子ルーツのハイパーグラフ結合合成（Yetzirah Engine）、多視点認知多様体（Babel Partitioner）、多多様体間コンセンサス検証（Truth Gate）を統合し、潜在空間の構造的グラウンディングとハルシネーション抑制を実現する表現アーキテクチャ。
+* **LinkedIn SSI Booster**: Persona Knowledge Graph、BM25検索、spaCy NLP、およびDerivative of Truth検証ゲートを備えた、ローカルファーストのLinkedIn Social Selling Index（SSI）最適化・自動化エージェント。
+* **Regulatory Intelligence Assistant (RIA)**: G7 GovAI Grand Challenge向けに設計した、Elasticsearch、Neo4jグラフ検索、ベクトル検索を組み合わせた多層ハイブリッドRAGアーキテクチャ。
+* **Answer42**: 学術研究分析のための9エージェント・オーケストレーション・パイプライン。クラウドAPIとローカルOllamaモデルの動的フォールバック機能を搭載。
+* **S1gnal-Zero**: Solace Build to Convert Hackathon受賞作品。Model Context Protocol (MCP) とイベント駆動型メッセージングを活用した5エージェント分散シグナル処理システム。
 
 ### コア技術 (Key Technical Pillars)
 
-1. **真実性評価 (Truth Gate) & 潜在位相グラウンディング**: Derivative of Truth、UIRA同型性損失（$\mathcal{L}_{\text{iso}}$）、PLNによる証拠・推論の確率的評価、多多様体コンセンサス損失（$\mathcal{L}_{\text{consensus}}$）を組み合わせた構造的検証レイヤー。
-2. **マルチエージェント・オーケストレーション**: 専門化されたエージェント、フォールバック処理、サーキットブレーカー、MCP/FastMCPベースのツール連携。
-3. **ディープインデキシングと検索 (Hybrid RAG)**: Elasticsearch、Neo4j、ベクトル検索を組み合わせた多層検索。
-4. **エンタープライズとイベントストリーミング**: Java、JMS、イベントブローカーを活用した高スループット・イベント駆動システム。
+1. **真実性評価 (Truth Gate) & 潜在位相グラウンディング**: Derivative of Truth、UIRA同型性損失（$\mathcal{L}_{\text{iso}}$）、PLNによる確率的検証、多多様体コンセンサス損失（$\mathcal{L}_{\text{consensus}}$）による多層検証。
+2. **マルチエージェント・オーケストレーション**: 専門化されたエージェント群、回路遮断（Circuit Breakers）、ローカルモデルルーティング、MCP/FastMCPツール連携。
+3. **ディープインデキシングと検索 (Hybrid RAG)**: Elasticsearch（BM25）、Neo4j（ナレッジグラフ）、ベクトル検索を統合したマルチステージ検索。
+4. **エンタープライズとイベントストリーミング**: Java、JMS、Solace PubSub+を活用した高スループット・高信頼性イベント駆動アーキテクチャ。
 
 </details>
 
@@ -41,7 +41,7 @@ The goal is practical intelligence with traceable behavior: systems that can exp
 
 A structured, auditable evidence-scoring framework for evaluating generated claims against retrieved knowledge.
 
-The framework combines BM25 retrieval, knowledge-graph evidence paths, token-level claim-evidence overlap, source credibility, uncertainty penalties, and Probabilistic Logic Network (PLN) inference.
+The framework operates on retrieved context provided by host RAG pipelines, combining token-level claim-evidence overlap, source credibility, uncertainty penalties, and Probabilistic Logic Network (PLN) inference.
 
 When PLN-enhanced scoring is enabled, evidence strength and reasoning strength are computed through probabilistic truth-value aggregation rather than relying only on fixed heuristic weights. A legacy weighted-scoring path remains available as a fallback.
 
@@ -52,6 +52,8 @@ Low-scoring claims can be flagged or removed by the post-generation truth gate, 
 The framework does not mathematically prove truth or control token generation in real time. It provides an interpretable, evidence-grounded estimate of claim support and exposes the reasoning and uncertainty behind that estimate.
 
 📄 **[Read the Theoretical Paper (PDF)](https://github.com/samjd-zz/linkedin_ssi_booster/blob/main/docs/The%20Derivative%20of%20Truth_%20A%20New%20Mathematical%20Framework%20for%20AI%20Truthfulness.pdf)**
+
+---
 
 **[Node 01] Universal Isomorphic Representation Architecture (UIRA)**
 
@@ -67,17 +69,21 @@ Includes a complete PyTorch reference execution pipeline for pre-training, topol
 
 🖼️ **[Architecture Overview & Diagram](https://github.com/samjd-zz/UIRA)**
 
+---
+
 **[Node 02] LinkedIn SSI Booster**
 
-A truth-gated, continual-learning automation agent driven by a local-first hybrid Retrieval-Augmented Generation (RAG) architecture — and a multi-avatar content-creation system spanning text, image, and music.
+A truth-gated, local-first automation agent engineered for Social Selling Index (SSI) optimization and continuous professional content generation.
 
-It uses BM25 for transparent lexical retrieval, NetworkX for knowledge-graph relationships, and spaCy for semantic and entity-oriented validation. Generated content is evaluated against persona facts, domain knowledge, and article evidence before it reaches the publishing workflow — scored end-to-end by the Derivative of Truth framework **[Node 00]**, which flags or removes low-confidence claims via the post-generation truth gate.
+The system combines BM25 lexical retrieval, NetworkX persona knowledge graphs, and spaCy NLP validation to structure domain context and maintain persona alignment. Before any generated post reaches the publishing workflow, its claims are evaluated against persona facts and domain evidence through a post-generation truth gate integrated with the Derivative of Truth framework **[Node 00]**.
 
-🎨 FLUX Capacitor — a local GPU art generator (FLUX.1-schnell, GGUF-quantized) rendering symbolic visuals for every post, with a shared GPU orchestrator that keeps Ollama-first sequencing on a single RTX 3060.
-
-🎶 Rei Toei — a Suno + Strudel-driven AI music avatar (inspired by William Gibson's Idoru) that converts curated technical knowledge into cyberpop/industrial algorithmic music — every lyric and pattern likewise passes through the DoT truth gate before publishing.
+* **Persona Graph & RAG:** Grounded retrieval across past posts, targeted industry news, and personal background facts.
+* **Truth Gate Verification:** Automatic scoring and suppression of low-confidence or unverified claims prior to publishing.
+* **Local-First Processing:** Runs orchestration locally, maintaining full control over model execution and personal dataset privacy.
 
 🌟 **[Star linkedin_ssi_booster on GitHub](https://github.com/samjd-zz/linkedin_ssi_booster)** 🌟
+
+---
 
 **[Node 03] Regulatory Intelligence Assistant (RIA)**
 
@@ -87,6 +93,8 @@ The system separates lexical retrieval, graph relationships, and semantic retrie
 
 🌟 **[Star regulatory-intelligence-assistant on GitHub](https://github.com/samjd-zz/regulatory-intelligence-assistant)** 🌟
 
+---
+
 **[Node 04] Answer42**
 
 A 9-agent orchestration pipeline designed for academic research analysis.
@@ -94,6 +102,8 @@ A 9-agent orchestration pipeline designed for academic research analysis.
 It uses specialized processing stages, automated fallback logic, and resilience controls to switch between cloud APIs and local Ollama models when the preferred provider is unavailable or unsuitable.
 
 🌟 **[Star answer42 on GitHub](https://github.com/samjd-zz/answer42)** 🌟
+
+---
 
 **[Node 05] S1gnal-Zero**
 
@@ -109,47 +119,49 @@ It uses event-driven communication, message-broker routing, and distributed agen
 
 #### 1. Hybrid RAG, Latent Topology & Evidence Grounding
 
-*Found in: Derivative of Truth Framework | UIRA Architecture | linkedin_ssi_booster | Regulatory Intelligence Assistant (RIA)*
+*Found in: Derivative of Truth Framework | UIRA Architecture | LinkedIn SSI Booster | Regulatory Intelligence Assistant (RIA)*
 
 The systems move beyond simple prompt wrapping by combining retrieval, structured evidence, topological latent constraints, probabilistic reasoning, and post-generation validation.
 
 * **Isomorphic Latent Grounding:** Enforcing metric preservation in continuous latent spaces ($\mathcal{L}_{\text{iso}}$) where distance between latent vectors mirrors physical/causal environment state invariants ($d_X \approx d_Z$).
 * **Derivative of Truth:** An evidence-scoring framework that combines evidence quality, reasoning type, source credibility, lexical claim-evidence overlap, and uncertainty penalties.
 * **Probabilistic Logic Networks & Consensus Gates:** PLN-enhanced scoring aggregates evidence and reasoning signals into probabilistic truth values, while multi-view consensus gates evaluate cross-manifold invariance ($\mathcal{L}_{\text{consensus}}$).
-* **Historical Truth Tracking:** When a claim is evaluated repeatedly, the system can track changes in its truth-gradient score and calculate a historical rate of change, $dT/dt$.
-* **Hybrid RAG Pipelines:** Combining deterministic lexical retrieval such as BM25 with knowledge-graph relationships and semantic similarity.
-* **Continual Learning:** The system records selected feedback and published-output signals to improve future ranking, repetition control, and content selection.
+* **Historical Truth Tracking:** When a claim is evaluated repeatedly, the system tracks changes in its truth-gradient score to calculate a historical rate of change, $dT/dt$.
+* **Hybrid RAG Pipelines:** Combining deterministic lexical retrieval (BM25) with knowledge-graph relationships (Neo4j / NetworkX) and vector similarity.
 
-The result is an auditable estimate of how well a generated claim is supported by the system's available evidence and underlying topology.
+---
 
 #### 2. Multi-Agent Orchestration & Workflow Design
 
-*Found in: Answer42 | S1gnal-Zero | UIRA Architecture*
+*Found in: Answer42 | S1gnal-Zero | UIRA Architecture | LinkedIn SSI Booster*
 
 The systems use specialized agents, disentangled sub-manifolds, and explicit processing stages to divide complex work into observable responsibilities.
 
 * **Agentic & Sub-Manifold Pipelines:** Specialized nodes and disentangled projections (temporal, spatial, logical, causal) communicate, transform, validate, and reconcile intermediate representations.
-* **Resilience & Local Routing:** Fallback mechanisms, circuit breakers, provider switching, and local model routing help workflows continue when a dependency or model is unavailable.
-* **Resource-Aware Processing:** Local systems can coordinate model usage to reduce GPU contention and avoid loading multiple heavy model instances unnecessarily.
-* **Protocols & Event Architecture:** MCP and FastMCP-based tool integrations connect agents to capabilities, while Solace and JMS support event-driven messaging patterns.
+* **Resilience & Local Routing:** Fallback mechanisms, circuit breakers, provider switching, and local model routing help workflows continue when a cloud dependency or model is unavailable.
+* **Resource-Aware Processing:** Local orchestrators coordinate model usage across local hardware to reduce GPU contention.
+* **Protocols & Event Architecture:** MCP and FastMCP-based tool integrations connect agents to capabilities, while Solace PubSub+ and JMS support event-driven messaging patterns.
+
+---
 
 #### 3. Deep Indexing & Search
 
-*Found in: Regulatory Intelligence Assistant | CIHR Portal | linkedin_ssi_booster*
+*Found in: Regulatory Intelligence Assistant (RIA) | LinkedIn SSI Booster*
 
-The search systems combine different retrieval strategies for heterogeneous information sources.
+The search systems combine different retrieval strategies for heterogeneous information sources across enterprise and public datasets.
 
-* **The Stack:** Elasticsearch for lexical retrieval and BM25 scoring, Neo4j for graph relationships and traversal, and vector search for semantic similarity.
+* **The Stack:** Elasticsearch for lexical retrieval and BM25 scoring, Neo4j / NetworkX for graph relationships and traversal, and vector search for semantic similarity.
 * **Search Logic:** Multi-stage retrieval and fallback strategies allow the system to use the most suitable available search mechanism for a query.
-* **Evidence Composition:** Search results can be combined with structured relationships and domain context before being passed to downstream generation or analysis.
-* **Domain Focus:** The work includes large collections of federal, regulatory, technical, and research-oriented documents.
+* **Evidence Composition:** Search results are combined with structured relationships and domain context before being passed to downstream generation or verification layers.
+
+---
 
 #### 4. Enterprise & Event Streaming
 
-*Found in: TPG/USPS JMS Platform | S1gnal-Zero | Shared Services Canada*
+*Found in: S1gnal-Zero | Enterprise Messaging Platforms (JMS / Solace)*
 
 * **High-Throughput Core:** Experience designing, maintaining, and scaling Java enterprise systems and event-driven platforms.
-* **Messaging:** JMS and event brokers provide durable communication patterns between services and processing stages.
+* **Messaging:** JMS and Solace PubSub+ event brokers provide durable communication patterns between microservices and processing agents.
 * **Operational Resilience:** Systems are designed around clear boundaries, failure handling, observability, and controlled recovery paths.
 * **Distributed Processing:** Event-driven architecture allows specialized components to process messages independently while remaining connected through explicit contracts.
 
