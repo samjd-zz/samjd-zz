@@ -12,6 +12,7 @@
 ### 主要プロジェクトと理論・実装フレームワーク (Featured Architectures & Frameworks)
 
 * **Derivative of Truth Framework**: BM25検索、知識グラフ、語彙的一致、不確実性ペナルティ、Probabilistic Logic Networks（確率論理ネットワーク）を組み合わせ、LLMが生成した主張の証拠支持度を評価する監査可能な真実性スコアリングフレームワーク。低スコアの主張は検出・フラグ付け・抑制できます。
+* **Universal Isomorphic Representation Architecture (UIRA)**: 位相幾何的距離保存（Adamic Encoder）、原子ルーツのハイパーグラフ結合合成（Yetzirah Engine）、多視点認知多様体（Babel Partitioner）、多多様体間コンセンサス検証（Truth Gate）を統合し、潜在空間の構造的グラウンディングとハルシネーション抑制を実現する次世代AI表現アーキテクチャ。
 * **LinkedIn SSI Booster**: 真偽検証ゲート、ハイブリッドRAG（Retrieval-Augmented Generation）、継続的学習機能を備えたローカルファーストの自動化エージェント。
 * **Regulatory Intelligence Assistant (RIA)**: G7 GovAI Grand Challenge向けに設計した、Elasticsearch、Neo4j、ベクトル検索を組み合わせた多層ハイブリッドRAGアーキテクチャ。
 * **Answer42**: 学術研究分析のための9エージェント・パイプライン。クラウドAPIとローカルOllamaモデルのフォールバック処理を備えています。
@@ -19,7 +20,7 @@
 
 ### コア技術 (Key Technical Pillars)
 
-1. **真実性評価 (Truth Gate) & Probabilistic Logic Networks**: Derivative of Truth、PLNによる証拠・推論の確率的評価、BM25、NetworkX、spaCyを組み合わせた多段階検証レイヤー。
+1. **真実性評価 (Truth Gate) & 潜在位相グラウンディング**: Derivative of Truth、UIRA同型性損失（$\mathcal{L}_{\text{iso}}$）、PLNによる証拠・推論の確率的評価、多多様体コンセンサス損失（$\mathcal{L}_{\text{consensus}}$）を組み合わせた構造的検証レイヤー。
 2. **マルチエージェント・オーケストレーション**: 専門化されたエージェント、フォールバック処理、サーキットブレーカー、MCP/FastMCPベースのツール連携。
 3. **ディープインデキシングと検索 (Hybrid RAG)**: Elasticsearch、Neo4j、ベクトル検索を組み合わせた多層検索。
 4. **エンタープライズとイベントストリーミング**: Java、JMS、イベントブローカーを活用した高スループット・イベント駆動システム。
@@ -28,7 +29,7 @@
 
 This portfolio showcases engineering principles for building reliable, auditable intelligent systems.
 
-I design systems where AI output is connected to retrieved evidence, explicit workflows, and observable validation rather than being treated as an unexamined answer. The work spans multi-agent orchestration, hybrid search, event-driven processing, local model routing, and creative AI systems.
+I design systems where AI output is connected to retrieved evidence, explicit workflows, and observable validation rather than being treated as an unexamined answer. The work spans multi-agent orchestration, hybrid search, event-driven processing, local model routing, mathematical latent-space alignment, and creative AI systems.
 
 The goal is practical intelligence with traceable behavior: systems that can explain what they used, why a result was produced, and where uncertainty remains.
 
@@ -52,7 +53,21 @@ The framework does not mathematically prove truth or control token generation in
 
 📄 **[Read the Theoretical Paper (PDF)](https://github.com/samjd-zz/linkedin_ssi_booster/blob/main/docs/The%20Derivative%20of%20Truth_%20A%20New%20Mathematical%20Framework%20for%20AI%20Truthfulness.pdf)**
 
-**[Node 01] LinkedIn SSI Booster**
+**[Node 01] Universal Isomorphic Representation Architecture (UIRA)**
+
+A topology-preserving, consensus-verified latent representation framework designed to enforce structural grounding, eliminate hallucination, and optimize multi-view reasoning in next-generation AI architectures.
+
+UIRA bridges category theory, hypergraph combinatorics, and representation learning through a four-tier processing stack:
+* **Isomorphic Grounding Layer (Adamic Encoder):** Enforces metric preservation between environment state invariants $d_X$ and latent representations $d_Z$ ($\mathcal{L}_{\text{iso}}$), eliminating meaningless token drift.
+* **Combinatorial Permutation Engine (Yetzirah Matrix):** Replaces flat token lookup tables with dynamic tensor-product permutations across atomic root embeddings on directed hypergraphs, achieving zero-shot compositional generalization.
+* **Multi-View Cognitive Manifolds (Babel Partition):** Projects continuous latent space into disentangled sub-manifolds (temporal, spatial, causal, logical) to prevent cross-domain interference.
+* **Distributed Consensus Truth Gate (Reconciliation):** Evaluates propositions across disparate cognitive frames using a cross-manifold invariance loss ($\mathcal{L}_{\text{consensus}}$) to ensure mathematical truth verification.
+
+Includes a complete PyTorch reference execution pipeline for pre-training, topological loss calculation, and multi-manifold consensus gating.
+
+🖼️ **[Architecture Overview & Diagram](https://github.com/samjd-zz/UIRA)**
+
+**[Node 02] LinkedIn SSI Booster**
 
 A truth-gated, continual-learning automation agent driven by a local-first hybrid Retrieval-Augmented Generation (RAG) architecture — and a multi-avatar content-creation system spanning text, image, and music.
 
@@ -64,7 +79,7 @@ It uses BM25 for transparent lexical retrieval, NetworkX for knowledge-graph rel
 
 🌟 **[Star linkedin_ssi_booster on GitHub](https://github.com/samjd-zz/linkedin_ssi_booster)** 🌟
 
-**[Node 02] Regulatory Intelligence Assistant (RIA)**
+**[Node 03] Regulatory Intelligence Assistant (RIA)**
 
 Built for the G7 GovAI Grand Challenge, this multi-tiered hybrid RAG architecture combines Elasticsearch, Neo4j graph traversal, and vector search to navigate large federal legal datasets.
 
@@ -72,7 +87,7 @@ The system separates lexical retrieval, graph relationships, and semantic retrie
 
 🌟 **[Star regulatory-intelligence-assistant on GitHub](https://github.com/samjd-zz/regulatory-intelligence-assistant)** 🌟
 
-**[Node 03] Answer42**
+**[Node 04] Answer42**
 
 A 9-agent orchestration pipeline designed for academic research analysis.
 
@@ -80,7 +95,7 @@ It uses specialized processing stages, automated fallback logic, and resilience 
 
 🌟 **[Star answer42 on GitHub](https://github.com/samjd-zz/answer42)** 🌟
 
-**[Node 04] S1gnal-Zero**
+**[Node 05] S1gnal-Zero**
 
 An award-winning 5-agent Model Context Protocol (MCP) system created for the Solace Build to Convert Hackathon.
 
@@ -92,28 +107,28 @@ It uses event-driven communication, message-broker routing, and distributed agen
 
 ### 🧬 Key Technical Pillars
 
-#### 1. Hybrid RAG, Truth Gates & Evidence Grounding
+#### 1. Hybrid RAG, Latent Topology & Evidence Grounding
 
-*Found in: linkedin_ssi_booster | Regulatory Intelligence Assistant (RIA) | Derivative of Truth Framework*
+*Found in: Derivative of Truth Framework | UIRA Architecture | linkedin_ssi_booster | Regulatory Intelligence Assistant (RIA)*
 
-The systems move beyond simple prompt wrapping by combining retrieval, structured evidence, probabilistic reasoning, and post-generation validation.
+The systems move beyond simple prompt wrapping by combining retrieval, structured evidence, topological latent constraints, probabilistic reasoning, and post-generation validation.
 
+* **Isomorphic Latent Grounding:** Enforcing metric preservation in continuous latent spaces ($\mathcal{L}_{\text{iso}}$) where distance between latent vectors mirrors physical/causal environment state invariants ($d_X \approx d_Z$).
 * **Derivative of Truth:** An evidence-scoring framework that combines evidence quality, reasoning type, source credibility, lexical claim-evidence overlap, and uncertainty penalties.
-* **Probabilistic Logic Networks:** PLN-enhanced scoring aggregates evidence and reasoning signals into probabilistic truth values. The system uses this to strengthen claim evaluation, not to prove objective truth.
+* **Probabilistic Logic Networks & Consensus Gates:** PLN-enhanced scoring aggregates evidence and reasoning signals into probabilistic truth values, while multi-view consensus gates evaluate cross-manifold invariance ($\mathcal{L}_{\text{consensus}}$).
 * **Historical Truth Tracking:** When a claim is evaluated repeatedly, the system can track changes in its truth-gradient score and calculate a historical rate of change, $dT/dt$.
 * **Hybrid RAG Pipelines:** Combining deterministic lexical retrieval such as BM25 with knowledge-graph relationships and semantic similarity.
-* **Truth Gate:** A multi-stage validation process that evaluates evidence strength, truth-gradient scores, article similarity, organization-name support, and fact-pool similarity.
 * **Continual Learning:** The system records selected feedback and published-output signals to improve future ranking, repetition control, and content selection.
 
-The result is an auditable estimate of how well a generated claim is supported by the system's available evidence.
+The result is an auditable estimate of how well a generated claim is supported by the system's available evidence and underlying topology.
 
 #### 2. Multi-Agent Orchestration & Workflow Design
 
-*Found in: Answer42 | S1gnal-Zero*
+*Found in: Answer42 | S1gnal-Zero | UIRA Architecture*
 
-The systems use specialized agents and explicit processing stages to divide complex work into observable responsibilities.
+The systems use specialized agents, disentangled sub-manifolds, and explicit processing stages to divide complex work into observable responsibilities.
 
-* **Agentic Pipelines:** Specialized nodes communicate, transform, validate, and refine intermediate results.
+* **Agentic & Sub-Manifold Pipelines:** Specialized nodes and disentangled projections (temporal, spatial, logical, causal) communicate, transform, validate, and reconcile intermediate representations.
 * **Resilience & Local Routing:** Fallback mechanisms, circuit breakers, provider switching, and local model routing help workflows continue when a dependency or model is unavailable.
 * **Resource-Aware Processing:** Local systems can coordinate model usage to reduce GPU contention and avoid loading multiple heavy model instances unnecessarily.
 * **Protocols & Event Architecture:** MCP and FastMCP-based tool integrations connect agents to capabilities, while Solace and JMS support event-driven messaging patterns.
